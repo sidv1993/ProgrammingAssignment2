@@ -44,19 +44,19 @@ cacheSolve <- function(x, ...) {
 ## > x <- matrix(2:5, 2, 2)
 
 ## > x
-## [,1] [,2]
+##       [,1] [,2]
 ## [1,]    2    4
 ## [2,]    3    5
 
 ## > y <- makeCacheMatrix(x)
 
 ## > y$get()
-## [,1] [,2]
+##       [,1] [,2]
 ## [1,]    2    4
 ## [2,]    3    5
 
 ## > cacheSolve(y)
-## [,1] [,2]
+##       [,1] [,2]
 ## [1,] -2.5    2
 ## [2,]  1.5   -1
 
@@ -64,7 +64,7 @@ cacheSolve <- function(x, ...) {
 
 ## > cacheSolve(y)
 ## getting cached matrix data
-## [,1] [,2]
+##       [,1] [,2]
 ## [1,] -2.5    2
 ## [2,]  1.5   -1
 
