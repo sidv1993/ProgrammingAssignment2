@@ -4,7 +4,7 @@
 
 ## makeCacheMatrix() is a function that creates a list containing elements
 ## which are based on the following functions to exxecute different operations.
-## 1. set() is a fucntion to set the value of the matrix
+## 1. set() is a function to set the value of the matrix
 ## 2. get() is a function to get the value of the matrix
 ## 3. setinv() is a function to set the value of inverse of the matrix
 ## 4. getinv() is a function to get the value of inverse of the matrix
