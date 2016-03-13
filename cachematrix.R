@@ -38,3 +38,34 @@ cacheSolve <- function(x, ...) {
   x$setinv(inv)
   inv 
 }
+
+## Sample Output:
+
+## > x <- matrix(2:5, 2, 2)
+
+## > x
+## [,1] [,2]
+## [1,]    2    4
+## [2,]    3    5
+
+## > y <- makeCacheMatrix(x)
+
+## > y$get()
+## [,1] [,2]
+## [1,]    2    4
+## [2,]    3    5
+
+## > cacheSolve(y)
+## [,1] [,2]
+## [1,] -2.5    2
+## [2,]  1.5   -1
+
+## In the above case, there is no cached data so inverse is computed and stored.
+
+## > cacheSolve(y)
+## getting cached matrix data
+## [,1] [,2]
+## [1,] -2.5    2
+## [2,]  1.5   -1
+
+## The second time, the inverse is not computed and the result is directly taken from the cached value.
